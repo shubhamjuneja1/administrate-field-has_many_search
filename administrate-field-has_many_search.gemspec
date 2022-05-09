@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-has_many_search'
-  gem.version = '0.1.0'.freeze
+  gem.version = '0.2.0'.freeze
   gem.authors = ['Klas Eskilson', 'Andrej Antas']
   gem.email = ['klas.eskilson@gmail.com', 'andrej@antas.cz']
   gem.homepage = 'https://github.com/redrick/administrate-field-has_many_search'
