@@ -1,0 +1,16 @@
+<%#
+# BelongsToSearch Index Partial
+
+This partial renders a belongs_to relationship,
+to be displayed on a resource's index page.
+
+By default, the relationship is rendered as a link to the associated object.
+
+## Local variables:
+
+- `field`:
+  An instance of Administrate::Field::BelongsToSearch.
+  A wrapper around the belongs_to relationship pulled from the database.
+%>
+
+<%= pluralize(field.data.size, t("activerecord.models.#{field.attribute.to_s.singularize}", default: field.attribute.to_s.humanize.downcase.singularize, count: field.data.size)) %>
