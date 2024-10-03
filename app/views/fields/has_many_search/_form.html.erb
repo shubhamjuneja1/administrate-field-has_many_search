@@ -21,7 +21,7 @@ that displays all possible records to associate with.
   <%= f.select(field.attribute_key,
                nil,
                {},
-               multiple: true,
+               multiple: !field.only_one,
                'data-url': polymorphic_url([namespace, field.associated_class], format: :json),
                'data-limit': field.limit) do %>
     <%= options_for_select(field.associated_resource_options, field.selected_options) %>
