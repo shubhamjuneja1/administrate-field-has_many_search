@@ -4,6 +4,7 @@ $(function() {
     var $element = $(element);
     $element.selectize({
       valueField: 'id',
+      plugins: ["remove_button"],
       labelField: 'dashboard_display_name',
       searchField: 'dashboard_display_name',
       create: false,
